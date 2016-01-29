@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return  super.onOptionsItemSelected(item);
     }
-    /*Изменение цвета toolbar и statusbar по кнопкам
+    /*Изменение цвета toolbar и statusbar  по кнопкам
     * а так же изменение видимости поля по клику на checkBox*/
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
