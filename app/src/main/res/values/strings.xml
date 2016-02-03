@@ -1,5 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">School-Softdesign</string>
+    <string name="app_name"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
+
+    <string name="FIO">Батаев Антон Михайлович</string>
+    <string name="mail">anton.bataev.95@mail.ru</string>
+    <string name="name_image_avatar">image_avatar</string>
+    <string name="values_rating">100</string>
+
+    <string name="drawer_profile">Профиль</string>
+    <string name="drawer_contacts">Контакты</string>
+    <string name="drawer_team">Команда</string>
+    <string name="drawer_task">Задачи</string>
+    <string name="drawer_setting">Настроки</string>
 
 </resources>

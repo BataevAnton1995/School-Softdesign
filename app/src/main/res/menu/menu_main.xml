@@ -1,6 +1,40 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/drawer_profile"
+        android:checked="true"
+        android:title="@string/drawer_profile"
+        android:icon="@drawable/ic_assignment_ind_24dp" />
+
+    <item
+        android:id="@+id/drawer_contacts"
+        android:checked="true"
+        android:title="@string/drawer_contacts"
+        android:icon="@drawable/ic_contacts_24dp"/>
+
+    <item
+        android:id="@+id/drawer_team"
+        android:checked="true"
+        android:title="@string/drawer_team"
+        android:icon="@drawable/ic_perm_identity_24dp"/>
+
+    <item
+        android:id="@+id/drawer_task"
+        android:checked="true"
+        android:title="@string/drawer_task"
+        android:icon="@drawable/ic_tasks_24dp"/>
+
+    <item
+        android:id="@+id/drawer_setting"
+        android:checked="true"
+        android:title="@string/drawer_setting"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_settings_high_24dp"/>
+
+
+
 </menu>
