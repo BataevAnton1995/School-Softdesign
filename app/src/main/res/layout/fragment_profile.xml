@@ -1,15 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Профиль"
-        android:id="@+id/textProfile"
-        android:layout_gravity="center_horizontal"
-        android:padding="100dp"/>
-</LinearLayout>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/txt_phone_value"
+                    style="@style/font.medium"
+                    android:text="@string/text_phone" />
+
+                <TextView
+                    android:id="@+id/txt_phone_label"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.mobile.type"
+                    android:textAlignment="viewStart"
+                    tools:ignore="RtlCompat,UnusedAttribute" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/txt_message_value"
+                    style="@style/font.medium"
+                    android:text="@string/text_mail"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/txt_email_label"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.email.type"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_vk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/txt_vk_value"
+                    style="@style/font.medium"
+                    android:text="@string/text_vk" />
+
+                <TextView
+                    android:id="@+id/txt_vk_label"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.vk.type" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/txt_github_value"
+                    style="@style/font.medium"
+                    android:text="@string/text_github" />
+
+                <TextView
+                    android:id="@+id/txt_github_label"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.github.type"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/txt_about_value"
+                    style="@style/font.medium"
+                    android:text="@string/text_about" />
+
+                <TextView
+                    android:id="@+id/txt_about_label"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.about.type"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
