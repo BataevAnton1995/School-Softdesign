@@ -2,6 +2,7 @@ package com.softdesign.school.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -18,8 +19,10 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mainView = inflater.inflate(R.layout.fragment_profile,container,false);
-        getActivity().setTitle(getResources().getString((R.string.drawer_profile)));
-               ((MainActivity) getActivity()).lockAppBar(false);
+        CollapsingToolbarLayout mCollapsingToolBar = (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapsing_toolbar);
+        mCollapsingToolBar.setTitle(getResources().getString(R.string.drawer_profile));
+
+        ((MainActivity) getActivity()).lockAppBar(false);
         return mainView;
     }
 

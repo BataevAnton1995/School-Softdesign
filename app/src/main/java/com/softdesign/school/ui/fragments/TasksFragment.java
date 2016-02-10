@@ -2,6 +2,7 @@ package com.softdesign.school.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +16,9 @@ public class TasksFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View mainView = inflater.inflate(R.layout.fragment_tasks,container,false);
-        getActivity().setTitle(getResources().getString(R.string.drawer_task));
-        ((MainActivity) getActivity()).lockAppBar(true);
+        CollapsingToolbarLayout mCollapsingToolBar = (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapsing_toolbar);
+        mCollapsingToolBar.setTitle(getResources().getString(R.string.drawer_task));
+                ((MainActivity) getActivity()).lockAppBar(true);
         return mainView;
     }
 
