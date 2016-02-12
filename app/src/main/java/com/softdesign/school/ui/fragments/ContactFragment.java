@@ -18,8 +18,11 @@ import com.softdesign.school.ui.adapters.RecycleUserAdapter;
 
 import java.util.ArrayList;
 
+import butterknife.Bind;
+
 public class ContactFragment extends Fragment{
-    private RecyclerView mRecyclerView;
+   // private RecyclerView mRecyclerView;
+    @Bind(R.id.recycle_view) RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     ArrayList<ModelUser> mUsers = new ArrayList<ModelUser>();
@@ -43,6 +46,7 @@ public class ContactFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (mainView == null) {
             mainView = inflater.inflate(R.layout.fragment_contact, container, false);
+            //ButterKnife.bind(this, mainView);
             CollapsingToolbarLayout mCollapsingToolBar = (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapsing_toolbar);
             mCollapsingToolBar.setTitle(getResources().getString(R.string.drawer_contacts));
 
@@ -50,7 +54,7 @@ public class ContactFragment extends Fragment{
         ((MainActivity) getActivity()).lockAppBar(true);
         generateData();
 
-        mRecyclerView = (RecyclerView) mainView.findViewById(R.id.recycle_view);
+       // mRecyclerView = (RecyclerView) mainView.findViewById(R.id.recycle_view);
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 

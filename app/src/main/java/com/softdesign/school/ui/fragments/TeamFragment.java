@@ -18,6 +18,7 @@ public class TeamFragment extends Fragment {
         View mainView  = inflater.inflate(R.layout.fragment_team,container,false);
         CollapsingToolbarLayout mCollapsingToolBar = (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapsing_toolbar);
         mCollapsingToolBar.setTitle(getResources().getString(R.string.drawer_team));
+       // ButterKnife.bind(this, mainView);
         ((MainActivity) getActivity()).lockAppBar(true);
         return mainView;
     }

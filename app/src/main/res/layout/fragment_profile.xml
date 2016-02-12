@@ -37,12 +37,12 @@
                 android:paddingRight="@dimen/spacing_larger">
 
                 <TextView
-                    android:id="@+id/txt_phone_value"
+                    android:id="@+id/value_txt_phone"
                     style="@style/font.medium"
                     android:text="@string/text_phone" />
 
                 <TextView
-                    android:id="@+id/txt_phone_label"
+                    android:id="@+id/label_txt_phone"
                     style="@style/font.regular"
                     android:text="@string/fragment.mobile.type"
                     android:textAlignment="viewStart"
@@ -81,13 +81,13 @@
                 android:paddingRight="@dimen/spacing_larger">
 
                 <TextView
-                    android:id="@+id/txt_message_value"
+                    android:id="@+id/value_txt_message"
                     style="@style/font.medium"
                     android:text="@string/text_mail"
                     android:textSize="@dimen/font_large" />
 
                 <TextView
-                    android:id="@+id/txt_email_label"
+                    android:id="@+id/label_txt_email"
                     style="@style/font.regular"
                     android:text="@string/fragment.email.type"
                     android:textAlignment="viewStart" />
@@ -125,12 +125,12 @@
                 android:paddingRight="@dimen/spacing_larger">
 
                 <TextView
-                    android:id="@+id/txt_vk_value"
+                    android:id="@+id/value_txt_vk"
                     style="@style/font.medium"
                     android:text="@string/text_vk" />
 
                 <TextView
-                    android:id="@+id/txt_vk_label"
+                    android:id="@+id/label_txt_vk"
                     style="@style/font.regular"
                     android:text="@string/fragment.vk.type" />
 
@@ -166,12 +166,12 @@
                 android:paddingRight="@dimen/spacing_larger">
 
                 <TextView
-                    android:id="@+id/txt_github_value"
+                    android:id="@+id/value_txt_github"
                     style="@style/font.medium"
                     android:text="@string/text_github" />
 
                 <TextView
-                    android:id="@+id/txt_github_label"
+                    android:id="@+id/label_txt_github"
                     style="@style/font.regular"
                     android:text="@string/fragment.github.type"
                     android:textAlignment="viewStart" />
@@ -209,12 +209,12 @@
                 android:paddingRight="@dimen/spacing_larger">
 
                 <TextView
-                    android:id="@+id/txt_about_value"
+                    android:id="@+id/value_txt_about"
                     style="@style/font.medium"
                     android:text="@string/text_about" />
 
                 <TextView
-                    android:id="@+id/txt_about_label"
+                    android:id="@+id/label_txt_about"
                     style="@style/font.regular"
                     android:text="@string/fragment.about.type"
                     android:textAlignment="viewStart" />

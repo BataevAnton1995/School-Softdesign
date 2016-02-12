@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import com.softdesign.school.R;
 import com.softdesign.school.ui.activities.MainActivity;
 
+import butterknife.ButterKnife;
+
 public class TasksFragment extends Fragment {
     @Nullable
     @Override
@@ -18,7 +20,8 @@ public class TasksFragment extends Fragment {
         View mainView = inflater.inflate(R.layout.fragment_tasks,container,false);
         CollapsingToolbarLayout mCollapsingToolBar = (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapsing_toolbar);
         mCollapsingToolBar.setTitle(getResources().getString(R.string.drawer_task));
-                ((MainActivity) getActivity()).lockAppBar(true);
+       // ButterKnife.bind(this, mainView);
+        ((MainActivity) getActivity()).lockAppBar(true);
         return mainView;
     }
 

@@ -32,7 +32,7 @@ public class RecycleUserAdapter extends RecyclerView.Adapter<UserViewHolder>{
     public void onBindViewHolder(UserViewHolder holder, int position) {
         ModelUser user = users.get(position);
         holder.fullName.setText(user.getmFirstName()+" "+user.getmLastName());
-       // holder.avatar.setImageDrawable(user.getmImage());
+        holder.avatar.setImageDrawable(user.getmImage());
 
     }
 
