@@ -1,5 +1,7 @@
 package com.softdesign.school.ui.fragments;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.softdesign.school.R;
+import com.softdesign.school.ui.activities.ActiveAndroidApp;
 import com.softdesign.school.ui.activities.MainActivity;
 
 public class ProfileFragment extends Fragment {
@@ -36,6 +39,13 @@ public class ProfileFragment extends Fragment {
         params.setAnchorId(R.id.appbar_layout);
         params.anchorGravity= Gravity.BOTTOM|Gravity.RIGHT;
         fab.setLayoutParams(params);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
 
       //  fab.setImageResource(R.drawable.theme_fom);
     }

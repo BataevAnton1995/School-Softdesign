@@ -9,17 +9,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.softdesign.school.R;
 import com.softdesign.school.data.managers.storage.models.ModelUser;
+import com.softdesign.school.data.managers.storage.models.User;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class UserAdapter extends BaseAdapter{
 
     Context mContext;
-    ArrayList<ModelUser> mUser;
+    List<User> mUser;
     LayoutInflater mInflater;
 
-    public UserAdapter(Context mContext, ArrayList<ModelUser> mUser) {
+    public UserAdapter(List<User> mUser) {
         this.mContext = mContext;
         this.mUser = mUser;
         this.mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -47,11 +49,13 @@ public class UserAdapter extends BaseAdapter{
             itemView = mInflater.inflate(R.layout.item_user_card, parent, false);
         }
 
-        ModelUser user = (ModelUser) getItem(position);
-        ImageView avatar = (ImageView) itemView.findViewById(R.id.user_avatar);
-        avatar.setImageDrawable(user.getmImage());
+        User user = (User) getItem(position);
+       // ImageView avatar = (ImageView) itemView.findViewById(R.id.user_avatar);
+       // avatar.setImageDrawable(user.getImage());
+        TextView teamName = (TextView) itemView.findViewById(R.id.text_name_teams);
         TextView fullName = (TextView) itemView.findViewById(R.id.full_name);
-        fullName.setText(user.getmFirstName() + " " + user.getmLastName());
+        fullName.setText(user.getFirstName() + " " + user.getLastName());
+        teamName.setText(user.getTeams());
 
         return itemView;
     }

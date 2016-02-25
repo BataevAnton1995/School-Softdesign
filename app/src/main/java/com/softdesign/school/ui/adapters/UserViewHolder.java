@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 
 public class UserViewHolder extends RecyclerView.ViewHolder {
     @Bind(R.id.full_name) TextView fullName;
-    @Bind(R.id.user_avatar) ImageView avatar;
+
 
     public UserViewHolder(View itemView){
         super(itemView);

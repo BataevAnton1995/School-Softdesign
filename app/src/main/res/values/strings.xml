@@ -23,34 +23,51 @@
     <string name="phone_number">+79374512652</string>
 
 
+    <!-- Drawer меню -->
+    <string name="drawer.teams">Команда</string>
+    <string name="drawer.tasks">Задачи</string>
+    <string name="drawer.settings">Настройки</string>
 
-<!-- Drawer меню -->
-<string name="drawer.teams">Команда</string>
-<string name="drawer.tasks">Задачи</string>
-<string name="drawer.settings">Настройки</string>
 
+    <!-- Фрагменты -->
+    <string name="fragment.profile.description">Здесь будет профиль</string>
+    <string name="fragment.contacts.description">Здесь будут контакты</string>
+    <string name="fragment.teams.description">Здесь будет команда</string>
+    <string name="fragment.tasks.description">Здесь будут задачи</string>
+    <string name="fragment.settings.description">Здесь будут настройки</string>
+    <string name="fragment.github.type">Github</string>
+    <string name="fragment.mobile.type">Мобильный</string>
+    <string name="fragment.email.type">E-mail</string>
+    <string name="fragment.vk.type">Вконтакте</string>
+    <string name="fragment.about.type">О себе</string>
 
-<!-- Фрагменты -->
-<string name="fragment.profile.description">Здесь будет профиль</string>
-<string name="fragment.contacts.description">Здесь будут контакты</string>
-<string name="fragment.teams.description">Здесь будет команда</string>
-<string name="fragment.tasks.description">Здесь будут задачи</string>
-<string name="fragment.settings.description">Здесь будут настройки</string>
-<string name="fragment.github.type">Github</string>
-<string name="fragment.mobile.type">Мобильный</string>
-<string name="fragment.email.type">E-mail</string>
-<string name="fragment.vk.type">Вконтакте</string>
-<string name="fragment.about.type">О себе</string>
+    <!-- Font Family -->
 
-<!-- Font Family -->
-
-<!-- Fragments Profile Text -->
-<string name="text_mail">anton.bataev.95@mail.ru</string>
-<string name="text_vk">vk.com/krep6ish</string>
-<string name="text_github">github.com/BataevAnton1995</string>
-<string name="text_about">В чем сила брат? в правде сила</string>
-<string name="text_phone">+79376577814</string>
-<string name="header_login">Батаев Антон</string>
-<string name="header_email">anton.bataev.95@mail.ru</string>
+    <!-- Fragments Profile Text -->
+    <string name="text_mail">anton.bataev.95@mail.ru</string>
+    <string name="text_vk">vk.com/krep6ish</string>
+    <string name="text_github">github.com/BataevAnton1995</string>
+    <string name="text_about">В чем сила брат? в правде сила</string>
+    <string name="text_phone">+79376577814</string>
+    <string name="header_login">Батаев Антон</string>
+    <string name="header_email">anton.bataev.95@mail.ru</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_active_android_app">ActiveAndroidApp</string>
+    <string name="red_team_name">Красная команда</string>
+    <string name="green_team_name">Зеленая команда</string>
+    <string name="blue_team_name">Синяя команда</string>
+    <string name="btn_add_contact">Добавить контакт</string>
+    <string name="btn_add_comand">Добавить команду</string>
+    <string name="comands">Название команды</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 
 </resources>

@@ -7,34 +7,34 @@ import android.view.ViewGroup;
 
 import com.softdesign.school.R;
 import com.softdesign.school.data.managers.storage.models.ModelUser;
+import com.softdesign.school.data.managers.storage.models.User;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
-public class RecycleUserAdapter extends RecyclerView.Adapter<UserViewHolder>{
+public class RecycleUserAdapter extends RecyclerView.Adapter<UserAdapterHolder>{
 
 
-    ArrayList<ModelUser> users;
+    List<User> users;
 
-    public RecycleUserAdapter(ArrayList<ModelUser> users) {
+    public RecycleUserAdapter(List<User> users) {
         this.users= users;
     }
 
     @Override
-    public UserViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public UserAdapterHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View convertView = LayoutInflater.
                 from(parent.getContext()).inflate(R.layout.item_user_card,parent,false);
-        return new UserViewHolder(convertView);
+        return new UserAdapterHolder(convertView);
     }
-
 
     @Override
-    public void onBindViewHolder(UserViewHolder holder, int position) {
-        ModelUser user = users.get(position);
-        holder.fullName.setText(user.getmFirstName()+" "+user.getmLastName());
-        holder.avatar.setImageDrawable(user.getmImage());
-
+    public void onBindViewHolder(UserAdapterHolder holder, int position) {
+        User user = users.get(position);
+        holder.setUser(user);
     }
+
 
     @Override
     public long getItemId(int position) {
