@@ -13,5 +13,7 @@
 
     <color name="red">#cf2c2f</color>
     <color name="red_dark">#7b0004</color>
+    <color name="grey">#7b7b7b</color>
+    <color name="black">#000000</color>
 
 </resources>
