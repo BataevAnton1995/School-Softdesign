@@ -99,9 +99,11 @@ public class ContactFragment extends Fragment implements LoaderManager.LoaderCal
 
 
     }
+    /*обновление данных в списке*/
     private void reloadUserData() {
         getLoaderManager().getLoader(0).forceLoad();
     }
+    /*создание фрагмена и инизиализация в butterknife*/
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -117,8 +119,7 @@ public class ContactFragment extends Fragment implements LoaderManager.LoaderCal
 
         return mainView;
     }
-
-
+    /*добавить контакт*/
   @OnClick(R.id.btn_add_contact)
   public void addContact() {
       LayoutInflater inflater = getActivity().getLayoutInflater();
@@ -145,7 +146,7 @@ public class ContactFragment extends Fragment implements LoaderManager.LoaderCal
       AlertDialog alert = builder.create();
       alert.show();
   }
-
+    /*добавить контакт*/
     @OnClick(R.id.btn_add_comand)
     public void addComand(){
         LayoutInflater inflater = getActivity().getLayoutInflater();
@@ -170,26 +171,28 @@ public class ContactFragment extends Fragment implements LoaderManager.LoaderCal
         AlertDialog alert = builder.create();
         alert.show();
     }
-
+    /*сохранить команду*/
     private void saveComand() {
         Team team = new Team(mNameComand.getText().toString());
         team.save();
-    }
 
+    }
+    /*сохранить контакт*/
     private void saveContact() {
 
         User user = new User(mFirstName.getText().toString(),
                 mLastName.getText().toString(), mSpinner.getSelectedItem().toString());
         user.save();
+        reloadUserData();
 
     }
-
+    /*заполнение спиннера данными из БД*/
     private void getSpinner() {
         TeamAdapter adapter = new TeamAdapter(getActivity(),Team.getAll());
         mSpinner = (Spinner) dialogViewUser.findViewById(R.id.spinner_team);
         mSpinner.setAdapter(adapter);
     }
-
+    /*запрос на получение списка всех контактов*/
     public void loadDataUser() {
         mUsers = getDataListUser();
     }
@@ -199,7 +202,7 @@ public class ContactFragment extends Fragment implements LoaderManager.LoaderCal
                 .from(User.class)
                 .execute();
     }
-
+    /*пересоздание активити*/
     @Override
     public Loader<List<User>> onCreateLoader(int id, Bundle args) {
         return new AsyncTaskLoader<List<User>>(getContext()) {
