@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/value_txt_phone"
+                    style="@style/font.medium"
+                    android:text="@string/text_phone" />
+
+                <TextView
+                    android:id="@+id/label_txt_phone"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.mobile.type"
+                    android:textAlignment="viewStart"
+                    tools:ignore="RtlCompat,UnusedAttribute" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/value_txt_message"
+                    style="@style/font.medium"
+                    android:text="@string/text_mail"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/label_txt_email"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.email.type"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_vk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/value_txt_vk"
+                    style="@style/font.medium"
+                    android:text="@string/text_vk" />
+
+                <TextView
+                    android:id="@+id/label_txt_vk"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.vk.type" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/value_txt_github"
+                    style="@style/font.medium"
+                    android:text="@string/text_github" />
+
+                <TextView
+                    android:id="@+id/label_txt_github"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.github.type"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+            <View style="@style/profile_strip" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:minHeight="@dimen/list_item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_list_info"
+                android:layout_height="@dimen/icon_list_info"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:src="@drawable/ic_contacts_24dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_larger"
+                android:layout_marginStart="@dimen/spacing_larger"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/spacing_larger"
+                android:paddingRight="@dimen/spacing_larger">
+
+                <TextView
+                    android:id="@+id/value_txt_about"
+                    style="@style/font.medium"
+                    android:text="@string/text_about" />
+
+                <TextView
+                    android:id="@+id/label_txt_about"
+                    style="@style/font.regular"
+                    android:text="@string/fragment.about.type"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+

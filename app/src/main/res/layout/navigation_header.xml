@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/theme_fom">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/FIO"
+        android:paddingLeft="10dp"
+        android:id="@+id/FIO"
+        android:textSize="14sp"
+        android:textColor="@color/icon_color"
+        android:layout_alignTop="@+id/mail"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/mail"
+        android:id="@+id/mail"
+        android:textColor="@color/icon_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="16dp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:scaleX="2"
+        android:scaleY="2"
+
+
+        android:contentDescription="@string/name_image_avatar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/green_circle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:contentDescription="image_rating" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingEnd="18dp"
+        android:paddingTop="40dp"
+        android:id="@+id/rating_value"
+        android:text="@string/values_rating"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

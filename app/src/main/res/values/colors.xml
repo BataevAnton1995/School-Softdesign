@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1e83ff</color>
-    <color name="colorPrimaryDark">#003a70</color>
+    <color name="colorPrimary">#484848</color>
+    <color name="colorPrimaryDark">#282828</color>
     <color name="colorAccent">#9040ff</color>
     <color name="icon_color">#FFFFFF</color>
 
@@ -13,5 +13,7 @@
 
     <color name="red">#cf2c2f</color>
     <color name="red_dark">#7b0004</color>
+    <color name="grey">#7b7b7b</color>
+    <color name="black">#000000</color>
 
 </resources>
